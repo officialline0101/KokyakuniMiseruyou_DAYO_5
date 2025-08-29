@@ -954,8 +954,8 @@
                 <span class="highlight-text">◆ボディエステ◆</span>
             </div>
             <div class="symptoms">
-                <button type="button" onclick="selectSymptom(this, 'treatment6')" data-price="3850">むくみ解消・アロマボディトリートメント美脚コース</button>
-                <button type="button" onclick="selectSymptom(this, 'treatment7')" data-price="5500">肩こり解消・アロマボディトリートメント美背中コース</button>
+                <button type="button" onclick="selectSymptom(this, 'treatment6')" data-price="3850">むくみ解消<br>・<br>アロマボディトリートメント美脚コース</button>
+                <button type="button" onclick="selectSymptom(this, 'treatment7')" data-price="5500">肩こり解消<br>・<br>アロマボディトリートメント美背中コース</button>
                 <button type="button" onclick="selectSymptom(this, 'treatment8')" data-price="9900">アロマボディ全身美肌トリートメント</button>
                 <button type="button" onclick="selectSymptom(this, 'treatment9')" data-price="9900">美ボディ痩身エステ</button>
             </div>
@@ -1055,11 +1055,11 @@
         let selectedirradiationsTime = 0; // 訪問回数で選択された時間
 
         let menuTimes = {
-            'ああああああああ': 120,
-            'ああああああああ': 120,
-            'ああああああああ': 120,
-            'ああああああああ': 120,
-            'ああああああああ': 120,
+            'たるみリフトアップコース': 60,
+            '陶器肌・小顔コース': 70,
+            'くすみクリアコース': 60,
+            'ニキビ・黒ずみ毛穴改善コース': 60,
+            '季節限定エステ': 60,
             'むくみ解消・アロマボディトリートメント美脚コース': 30,
             '肩こり解消・アロマボディトリートメント美背中コース': 30,
             'アロマボディ全身美肌トリートメント': 60,
@@ -1371,7 +1371,7 @@ function createTreatmentContent(title, imageUrl, description, price, time, accou
             // 呼び出し例（treatmentIdやボタンの条件が揃っている前提）
 if (treatmentId === 'treatment1') {
     treatmentText.innerHTML = createTreatmentContent(
-        'たるみリフトアップコース',
+        '',
         'https://www.dropbox.com/scl/fi/gb5udw7nx5n41e7uammo7/.png?rlkey=hsjxq7xf4br6x72sr0uy54eo1&st=w1b6qh09&raw=1',
         '詳細デコルテトリートメント付き！<br>ヒアルロン酸をお肌に導入！ ',
         '￥7,700',
@@ -1379,33 +1379,33 @@ if (treatmentId === 'treatment1') {
     );
 } else if (treatmentId === 'treatment2') {
     treatmentText.innerHTML = createTreatmentContent(
-        '陶器肌小顔コース',
         '',
+        'https://www.dropbox.com/scl/fi/bn4zqjda7te3rz20r9vr8/.png?rlkey=fbcmc2vs9578wsal1gdp8pkg0&st=vsvv16jb&raw=1',
         ' デコルテトリートメント付き！<br>最速でお肌の栄養補給！ <br>【こんな方にオススメ】<br>・乾燥が気になる方<br>・フェイスラインのたるみ・頬の毛穴が気になる方<br>・長年しわが気になっている方',
         '￥7,700',
         '70分'
     );
 } else if (treatmentId === 'treatment3') {
     treatmentText.innerHTML = createTreatmentContent(
-        'くすみクリアコース',
-        'https://www.dropbox.com/scl/fi/bn4zqjda7te3rz20r9vr8/.png?rlkey=fbcmc2vs9578wsal1gdp8pkg0&st=2wlei5zb&raw=1',
-        'フェイシャルマッサージで毛穴の汚れをしっかり落としたあと、約1ヶ月分の美容クリームを40℃の熱で一気に入れ込み、くすみ、むくみを除去！固まった石膏をはずすと、小顔&美白が実現！<br><br>【こんな方にオススメ】<br>・お肌に透明感がほしい方<br>・フェイスラインのたるみ・ほうれい線が気になる方<br>・首・顎のたるみが気になる方<br>＋1100円で、さらに透明感を高めるミネラルパックお付けできます。<br><br>(ミネラルパック付きの場合は＋10分の施術時間になります)',
+        '',
+        'https://www.dropbox.com/scl/fi/zk2wn5jecjwvcrvqmlybq/.png?rlkey=u2kwr7mzdyfgjp2xwcjmur75s&st=gjxegsek&raw=1',
+        'デコルテトリートメント付き♪<br><br>【こんな方にオススメ】<br>・お肌に透明感がほしい方<br>・フェイスラインのたるみ・ほうれい線が気になる方<br>・首・顎のたるみが気になる方<br><br>＋1100円で、さらに透明感を高めるミネラルパックお付けできます。<br>(ミネラルパック付きの場合は＋10分の施術時間になります)',
         '￥4,400',
         '60分'
     );
 } else if (treatmentId === 'treatment4') {
     treatmentText.innerHTML = createTreatmentContent(
-        'ニキビ・黒ずみ毛穴改善コース',
+        '',
         'https://www.dropbox.com/scl/fi/ywa0w1vtlihjkffss3jhz/.jpg?rlkey=bawko2lipbxta2uxlo0b0ljjb&st=ym2dktem&raw=1',
-        ' デコルテトリートメント付き！<br>内側と外側のケア！<br>＋1100円で、さらに毛穴の詰まりを綺麗にするディープクレンジングお付けできます。<br>(ディープクレンジング付きの場合は＋10分の施術時間になります)',
+        '内側のケアは、ドライヘッドトリートメントで、質の良い睡眠とリフレッシュ<br>外側のケアは、イオンスチームを浴びながら毛穴の奥のお掃除と、血流を促すデコルテトリートメント<br>オールハンドトリートメントでリラクゼーション効果大です！<br><br>【こんな方にオススメ】<br>・繰り返し同じところにニキビができる<br>・毛穴の黒ずみが気になる<br>・ニキビケアの方法がわからない',
         '￥6,050',
         '60分'
     );
 } else if (treatmentId === 'treatment5') {
     treatmentText.innerHTML = createTreatmentContent(
-        '季節限定エステ',
+        '',
         'https://www.dropbox.com/scl/fi/cc8qu7ypagm0d69uvfm1p/.jpg?rlkey=879jpwkbvar4iii4ri9egk2cm&st=p66ymrbi&raw=1',
-        'その時期に合わせた化粧品を使用し、肌悩みを改善<br>月毎にエステの内容をお送り致します',
+        'その時期に合わせた化粧品を使用し、肌悩みを改善いたします。<br>月毎にエステの内容をお送り致します。<br><br>▲料金は商品により変動いたします。',
         '',
         ''
     );
@@ -1413,7 +1413,7 @@ if (treatmentId === 'treatment1') {
     treatmentText.innerHTML = createTreatmentContent(
         '',
         'https://www.dropbox.com/scl/fi/q7c3hdq2jlcq9jq2of8ys/.png?rlkey=b0j1ueeege5gn62phmrpmx57r&st=1akklx7c&raw=1',
-        '施術時間　30分<br>フェイシャルエステとの組み合わせで、サロンにて550円引きさせていただきます<br><br>デスクワーク、立ち仕事の方にオススメ！<br>むくみがとれて足が軽くなります♪',
+        'フェイシャルエステとの組み合わせで、サロンにて550円引きさせていただきます<br><br>デスクワーク、立ち仕事の方にオススメ！<br>むくみがとれて足が軽くなります♪',
         '￥3,850',
         '30分'
     );
@@ -1421,7 +1421,7 @@ if (treatmentId === 'treatment1') {
     treatmentText.innerHTML = createTreatmentContent(
         '',
         'https://www.dropbox.com/scl/fi/vvcvbb466je92fgo2q9rb/.png?rlkey=l7riz7tj4f5c9qvc945eljjbp&st=kmlvq7f1&raw=1',
-        '施術時間　30分<br>フェイシャルエステとの組み合わせで、サロンにて550円引きさせていただきます<br><br>猫背・巻き肩を改善したい方にオススメ！<br>姿勢が整うことで、肩こり解消にも♪',
+        'フェイシャルエステとの組み合わせで、サロンにて550円引きさせていただきます<br><br>猫背・巻き肩を改善したい方にオススメ！<br>姿勢が整うことで、肩こり解消にも♪',
         '￥3,850',
         '30分'
     );
